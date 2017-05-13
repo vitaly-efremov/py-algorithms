@@ -1,20 +1,20 @@
 import unittest
 
 from quick_sort import quick_sort_classic, quick_sort
-from tests import CommonSortMixin
+from .sort_testing_mixin import TestSortMixin
 
 
-class QuickSortClassicTestCase(CommonSortMixin, unittest.TestCase):
+class QuickSortClassicTestCase(TestSortMixin, unittest.TestCase):
     def setUp(self):
         self.sort_func = quick_sort_classic
 
 
-class QuickSortPythonicTestCase(CommonSortMixin, unittest.TestCase):
+class QuickSortPythonicTestCase(TestSortMixin, unittest.TestCase):
     def setUp(self):
         self.sort_func = quick_sort
 
 
-class QuickSortShortTestCase(CommonSortMixin, unittest.TestCase):
+class QuickSortShortTestCase(TestSortMixin, unittest.TestCase):
     def setUp(self):
         self.sort_func = quick_sort
 

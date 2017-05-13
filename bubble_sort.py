@@ -8,6 +8,7 @@ def bubble_sort(array):
         if is_sorted:
             return array
 
+
 if __name__ == '__main__':
     unordered_list = [2, 3, 1, 5, 0, 8, 9, 7]
     print('Ordered list with V1:', bubble_sort(unordered_list))
